@@ -1,0 +1,10 @@
+   1. Arduino Footprint Correction
+2. ESC align according to heat sinks and add there drills
+3. NUC connector
+4. molex connector for buck
+5.   +1 buck for JETSON
+6. remove current sense circuit  AFTER TESTING and lcd.
+7.  remove solenoid IF NEEDED
+8. change all picoclasp connector
+
+
