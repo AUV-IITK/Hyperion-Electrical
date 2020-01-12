@@ -1,0 +1,289 @@
+Info: Reading netlist file “F:\PCBs AUV\ALL_IN_ONE\all_in_one.net”.
+
+Info: Using references to match components and footprints.
+
+* Warning: component 'J21': board footprint 'Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm', netlist footprint 'conn footprint:46817-1002 Guardian 2 Circuit Power Plug000'
+
+* Warning: component 'J12': board footprint 'Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm', netlist footprint 'Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm'
+
+* Warning: component 'J11': board footprint 'Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm', netlist footprint 'Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm'
+
+* Warning: component 'J4': board footprint 'Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical'
+
+* Warning: component 'J1': board footprint 'Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical'
+
+* Warning: component 'J5': board footprint 'Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical'
+
+* Warning: component 'J7': board footprint 'Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical'
+
+* Warning: component 'J8': board footprint 'Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical'
+
+* Warning: component 'J3': board footprint 'Socket_Strips:Socket_Strip_Straight_1x13_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical'
+
+* Warning: component 'J9': board footprint 'Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical'
+
+* Warning: component 'J6': board footprint 'Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical'
+
+* Warning: component 'J10': board footprint 'Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm', netlist footprint 'Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical'
+
+* Warning: component 'XA1': board footprint 'conn footprint:Arduino_Mega2560_Shield', netlist footprint 'ALL_IN_ONE:Arduino_Mega2560_Shield'
+
+* Warning: component 'J2': board footprint 'Socket_Strips:Socket_Strip_Straight_1x13_Pitch2.54mm', netlist footprint 'ALL_IN_ONE:1_3 pin&socket'
+
+Info: Checking netlist component footprint "D1:/5C85DB19:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D2:/5C85DC30:conn footprint:DO-214AB".
+
+Info: Checking netlist component footprint "D3:/5C85E1B0:conn footprint:DO-214AB".
+
+Info: Checking netlist component footprint "D4:/5C861192:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D5:/5C861198:conn footprint:DO-214AB".
+
+Info: Checking netlist component footprint "D6:/5C86119E:conn footprint:DO-214AB".
+
+Info: Checking netlist component footprint "D7:/5C8F79DE:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D8:/5C8F8A3C:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D9:/5C9026E3:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D10:/5C8F8756:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D11:/5C8F8A51:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D12:/5C9026F8:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D13:/5C8F8873:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D14:/5C8F8A66:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D15:/5C90ECAA:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D16:/5C8FDBCC:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D17:/5C8FDBE1:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D18:/5C913566:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "D19:/5C8E2469:LEDs:LED_D10.0mm".
+
+Info: Checking netlist component footprint "F1:/5C8163E8:Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering".
+
+Info: Checking netlist component footprint "J1:/5C8A23AF:Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J2:/5C895BCD:ALL_IN_ONE:1_3 pin&socket".
+
+Info: Checking netlist component footprint "J3:/5B234164:Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J4:/5B215515:Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J5:/5B2155D2:Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J6:/5B22B634:Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J7:/5B22B061:Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J8:/5B22B154:Connectors_Molex:Molex_PicoClasp_501331-0407_1x04_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J9:/5B22B242:Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J10:/5C883C03:Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical".
+
+Info: Checking netlist component footprint "J11:/5C8E962F:Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm".
+
+Info: Checking netlist component footprint "J12:/5C8E50CF:Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm".
+
+Info: Checking netlist component footprint "J13:/5C8E46A3:Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm".
+
+Info: Checking netlist component footprint "J14:/5C90A52C:Connectors_Terminal_Blocks:TerminalBlock_bornier-4_P5.08mm".
+
+Info: Checking netlist component footprint "J15:/5C8E4A44:Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm".
+
+Info: Checking netlist component footprint "J16:/5C8E4E7C:Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm".
+
+Info: Checking netlist component footprint "J17:/5C8E4FA7:Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm".
+
+Info: Checking netlist component footprint "J18:/5C8A065E:ALL_IN_ONE:4_3connector".
+
+Info: Checking netlist component footprint "J19:/5C9AD0B3:Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical".
+
+Adding new component "J19:/5C9AD0B3" footprint "Connectors_Molex:Molex_PicoClasp_501331-0207_1x02_P1.0mm_Vertical".
+
+Changing component "J19:/5C9AD0B3" pin "1" net name from "" to "/DVL-".
+
+Changing component "J19:/5C9AD0B3" pin "2" net name from "" to "/DVL+".
+
+Info: Checking netlist component footprint "J20:/5C8A1187:ALL_IN_ONE:4_3connector".
+
+Info: Checking netlist component footprint "J21:/5C81832C:conn footprint:46817-1002 Guardian 2 Circuit Power Plug000".
+
+Info: Checking netlist component footprint "R1:/5C85D9A9:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R2:/5C85E333:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R3:/5C86118C:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R4:/5C8611A4:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R5:/5C8F74B1:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R6:/5C897700:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R7:/5C8979B4:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R8:/5C896A4F:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R9:/5C897581:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R10:/5C897B19:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R11:/5C896BE3:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R12:/5C897423:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R13:/5C8972AA:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R14:/5C87F31C:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R15:/5C815FAE:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R16:/5C8160A2:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R17:/5C816114:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R18:/5C81611A:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R19:/5C81631B:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R20:/5C816321:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R21:/5C816327:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R22:/5C81632D:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R23:/5C816398:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R24:/5C88E9ED:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R25:/5C8828E6:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R26:/5C896D5C:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R27:/5C896EC2:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R28:/5C897152:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R29:/5C8239A2:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R30:/5C814DDB:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R31:/5C82665A:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R32:/5C826654:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R33:/5C82650C:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R34:/5C8264E2:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R35:/5C8264E8:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R36:/5C8264EE:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R37:/5C8264F4:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R38:/5C8264FA:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R39:/5C826CFB:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R40:/5C826CF5:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R41:/5C826CB1:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R42:/5C826C87:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R43:/5C826C93:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R44:/5C826C8D:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R45:/5C826C99:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R46:/5C826C9F:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R47:/5C82B035:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R48:/5C82B271:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R49:/5C88DEF9:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R50:/5C88DEFF:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R51:/5C82838C:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R52:/5C828392:Resistors_SMD:R_1206_HandSoldering".
+
+Info: Checking netlist component footprint "R53:/5C9A8A62:Resistors_SMD:R_1206_HandSoldering".
+
+Adding new component "R53:/5C9A8A62" footprint "Resistors_SMD:R_1206_HandSoldering".
+
+Changing component "R53:/5C9A8A62" pin "1" net name from "" to "/DVL".
+
+Changing component "R53:/5C9A8A62" pin "2" net name from "" to "/VIN1".
+
+Info: Checking netlist component footprint "R54:/5C9A911D:Resistors_SMD:R_1206_HandSoldering".
+
+Adding new component "R54:/5C9A911D" footprint "Resistors_SMD:R_1206_HandSoldering".
+
+Changing component "R54:/5C9A911D" pin "1" net name from "" to "/DVL".
+
+Changing component "R54:/5C9A911D" pin "2" net name from "" to "/A11".
+
+Info: Checking netlist component footprint "R55:/5C9A9123:Resistors_SMD:R_1206_HandSoldering".
+
+Adding new component "R55:/5C9A9123" footprint "Resistors_SMD:R_1206_HandSoldering".
+
+Changing component "R55:/5C9A9123" pin "1" net name from "" to "/A11".
+
+Changing component "R55:/5C9A9123" pin "2" net name from "" to "GND".
+
+Info: Checking netlist component footprint "U1:/5C8A5EDC:ALL_IN_ONE:logic_converter".
+
+Info: Checking netlist component footprint "U2:/5C8517D5:TO_SOT_Packages_SMD:TO-263-7_TabPin4".
+
+Info: Checking netlist component footprint "U3:/5C861186:TO_SOT_Packages_SMD:TO-263-7_TabPin4".
+
+Info: Checking netlist component footprint "U4:/5C8480CA:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U5:/5C8480D6:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U6:/5C82ABFE:Displays:WC1602A".
+
+Info: Checking netlist component footprint "U7:/5C8480D0:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U8:/5C8480E2:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U9:/5C8480DC:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U10:/5C8480EE:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U11:/5C8480E8:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "U12:/5C8480F4:ALL_IN_ONE:esc".
+
+Info: Checking netlist component footprint "XA1:/5B20C79E:ALL_IN_ONE:Arduino_Mega2560_Shield".
+
+Changing component "XA1:/5B20C79E" pin "A11" net name from "/ANA1" to "/A11".
+
+Changing component "XA1:/5B20C79E" pin "A12" net name from "/ANA2" to "/ANA1".
+
+Changing component "XA1:/5B20C79E" pin "A13" net name from "/ANA3" to "/ANA2".
+
+Changing component "XA1:/5B20C79E" pin "A14" net name from "/ANA4" to "/ANA3".
+
+Changing component "XA1:/5B20C79E" pin "A15" net name from "Net-(XA1-PadA15)" to "/ANA4".
+
+Error: Component 'J11' pad '3' not found in footprint 'Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm'
+
+Error: Component 'U1' pad '~' not found in footprint 'ALL_IN_ONE:logic_converter'
+
+Warning: Copper zone (net name '/GND'): net has no pads connected.

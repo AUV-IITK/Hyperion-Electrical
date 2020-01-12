@@ -1,0 +1,16 @@
+.0484090003 :1 ;Conn USB 3.0 Type A F 18 POS 2mm/2.5mm Solder ST Thru-Hole 18 Terminal 2 Port Tray
+"0484090003"
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9 10=10 11=11 12=12 13=13 14=14 15=15 16=16 17=17 18=18 19=M1 20=M2 21=M3 22=M4
+*PLB 1="VBUS_1" 2="D-_1" 3="D+_1" 4="GND_1" 5="STDA_SSRX-_1" 6="STDA_SSRX+_1" 7="GND_DRAIN_1" 8="STDA_SSTX-_1" 9="STDA_SSTX+_1" 10="VBUS_2" 11="D-_2" 12="D+_2" 13="GND_2" 14="STDA_SSRX-_2" 15="STDA_SSRX+_2" 16="GND_DRAIN_2" 17="STDA_SSTX-_2" 18="STDA_SSTX+_2" 19="SHIELD_1" 20="SHIELD_2" 21="SHIELD_3" 22="SHIELD_4"
+*MXP 22
+*DFN 0484090003
+~!Mouser Part Number (N/A)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (0484090003)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/0484090003.pdf)
+~!Height (14.88mm)
+"0484090003"
+1.1!U 3.1!U 5.1!U 7.1!U 9.1!U 11.1!U 13.1!U 15.1!U 17.1!U 19.1!U 21.1!U 2.1!U 4.1!U 6.1!U 8.1!U 10.1!U 12.1!U 14.1!U 16.1!U 18.1!U 20.1!U 22.1!U 

@@ -1,0 +1,16 @@
+.53375-0410 :1 ;Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 4 Way 1 Row Straight PCB Header, Solder Termination, 3A
+"53375-0410"
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 5
+*DFN 53375-0410
+~!Mouser Part Number (538-53375-0410)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=538-53375-0410)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (53375-0410)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/53375-0410.pdf)
+~!Height (-)
+~!3D_Model (53375-0410)
+"53375-0410"
+1.1!U 3.1!U 2.1!U 4.1!U 

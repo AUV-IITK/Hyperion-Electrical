@@ -1,0 +1,420 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">24-12-2019</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">16:20:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc" class="file"><acronym title="D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc">D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">17</td></tr>
+</table>
+</td>
+</table><a name="IDON0PPL2BW0SHOKOG3H1BAKQLWTB2WYYFXH3SVJZBV2DW02FX1NM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBWNET5VCSVKECKREAALBJDVAVGX3XDGNXH2MXQD0IIRWPY0BH22G">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUSIDMVOFOMSWIPV4KT5QBQNQ0G5AEXFWBWOQWKETMAOZDMXSVBYM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1520JPRZWWMFCBNUEX1Q0KVJVKFLLZY0DWQVSZHKJURNP1FRBVCO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2XECRTOCIJAJK3UYODZNPCTUOM3XEBIB225QKMKFGIUWGIJH4MQ">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2GMI5HBH2NYID2ZI0UBGHQ3URI5HSYIUBUN4OTIU3T4BC22UFYEC">Width Constraint (Min=0.254mm) (Max=2mm) (Preferred=1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDXWRHRJMEHDRCMFDYRLAT2ID0C0MMA2LRUY5T2IJQNRLBWN0X3SG">Width Constraint (Min=1mm) (Max=4mm) (Preferred=3mm) ((InNet('IN+') or InNet('IN-') or InNet('OUT-')))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOXNP1W4MO5NHBGDC2JQ2H5QTDDBV0DWZYAQQWEJEHNMGF01C4EVD">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVRY0DXWG4YOMCVO0NZUAVJTP5PKURUHMP0WUB5KKD1YZRKTNJTFE">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWPCB40LBRJNVKSR4JUZRHHV5PP5UD1WTBDORWVPQJJ0FEI1YXI2G">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI1554P3EJGB1JHMQ0WVQ5ZKTHGQWERO5WW0YZRPMN0EBS2LAJZZM">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYKJJV0O002PDCMEYYPUTMR05EONIM0PYKZZ5OALMICGSTADSW55D">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJJMYDN051T2OM4W2XEUJR5XWNGJ1GXENAO1W4XLRCEZALGRG4SGH">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHWOSBKZ443THKQUU4TLLUXGE3OH452ZN2F5WE3JEZLOAYEJ5BUGH">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2J3BRKRUJXU3HLEME1NTQ3UWDPKIOPB2GSCHUEN1SWRYTGAIXZ1P">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEFWWT4RLQXQRO12WWOXN4FOKKFJKHEUQQEBQV1MTS2RBEWAGO20G">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLVPSK3QQNF2KKVFMC3ZBPPEBIPB2FA5AXFKNVXJJXFYHVKZQPIPD">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4Z2XUZZ3KW4SHEK53SYQJZHH3FSSO5MD4D22MKFV5ITVDM22AB0D">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">7</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTTL3BV3BLUPYLFSHX0EPE5NXHXK1A4FMTQTSQ12M2WV0FC43GE">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">17</td>
+</tr>
+</table><br><a name="IDJXBQA2QIJ4ZNL0ULG1RVFJMYLIPDEEW0B15QBXKFIPSQPYCEGIXG"><h2>Rule Violations</h2></a><a name="IDCXL0YP1UJEGHDYWDE3HD4NLSEB4AJMHR32RBQRHJIUI4Y0W12VH"><h2>Waived Violations</h2></a><a name="IDLVPSK3QQNF2KKVFMC3ZBPPEBIPB2FA5AXFKNVXJJXFYHVKZQPIPD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1173.313mil|Location2.X=1180.979mil|Location1.Y=1542.345mil|Location2.Y=1550.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1173.313mil|Location2.X=1180.979mil|Location1.Y=1542.345mil|Location2.Y=1550.011mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.254mm) Between Pad P2-1(5mm,15.27mm) on Multi-Layer And Text "R2" (3mm,13mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1173.107mil|Location2.X=1184.357mil|Location1.Y=1459.052mil|Location2.Y=1470.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1173.107mil|Location2.X=1184.357mil|Location1.Y=1459.052mil|Location2.Y=1470.302mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.149mm &lt; 0.254mm) Between Pad P2-2(5mm,12.73mm) on Multi-Layer And Text "R2" (3mm,13mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.149mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1419.484mil|Location2.X=1430.734mil|Location1.Y=1369.635mil|Location2.Y=1380.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1419.484mil|Location2.X=1430.734mil|Location1.Y=1369.635mil|Location2.Y=1380.885mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.2mm &lt; 0.254mm) Between Pad Q1-3(11mm,11.46mm) on Multi-Layer And Text "Q1" (11mm,8.81mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.2mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1195.286mil|Location2.X=1206.777mil|Location1.Y=1786.65mil|Location2.Y=1797.9mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1195.286mil|Location2.X=1206.777mil|Location1.Y=1786.65mil|Location2.Y=1797.9mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.068mm &lt; 0.254mm) Between Pad R1-1(4.65mm,22mm) on Bottom Layer And Text "R1" (5mm,21mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.068mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1265.044mil|Location2.X=1276.294mil|Location1.Y=1787.229mil|Location2.Y=1798.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1265.044mil|Location2.X=1276.294mil|Location1.Y=1787.229mil|Location2.Y=1798.479mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.254mm) Between Pad R1-2(7.35mm,22mm) on Bottom Layer And Text "R1" (5mm,21mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.032mil|Location2.X=1118.282mil|Location1.Y=1466.816mil|Location2.Y=1478.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.032mil|Location2.X=1118.282mil|Location1.Y=1466.816mil|Location2.Y=1478.066mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.254mm) Between Pad R2-1(2mm,12.65mm) on Bottom Layer And Text "R2" (3mm,13mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.032mil|Location2.X=1118.282mil|Location1.Y=1540.635mil|Location2.Y=1551.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.032mil|Location2.X=1118.282mil|Location1.Y=1540.635mil|Location2.Y=1551.885mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.254mm) Between Pad R2-2(2mm,15.35mm) on Bottom Layer And Text "R2" (3mm,13mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1309.336mil|Location2.X=1320.586mil|Location1.Y=1185.773mil|Location2.Y=1197.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1309.336mil|Location2.X=1320.586mil|Location1.Y=1185.773mil|Location2.Y=1197.023mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.254mm) Between Pad R3-1(8.35mm,5mm) on Bottom Layer And Text "R3" (8mm,6mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1220.782mil|Location2.X=1232.032mil|Location1.Y=1185.773mil|Location2.Y=1197.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1220.782mil|Location2.X=1232.032mil|Location1.Y=1185.773mil|Location2.Y=1197.023mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.254mm) Between Pad R3-2(5.65mm,5mm) on Bottom Layer And Text "R3" (8mm,6mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:54<br>just silk screen</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4Z2XUZZ3KW4SHEK53SYQJZHH3FSSO5MD4D22MKFV5ITVDM22AB0D"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1419.398mil|Location2.X=1427.065mil|Location1.Y=1300.95mil|Location2.Y=1308.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1419.398mil|Location2.X=1427.065mil|Location1.Y=1300.95mil|Location2.Y=1308.617mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.254mm) Between Text "Q1" (11mm,8.81mm) on Bottom Overlay And Track (8.065mm,8.7mm)(12.765mm,8.7mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1339.624mil|Location2.X=1350.874mil|Location1.Y=1301.855mil|Location2.Y=1313.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1339.624mil|Location2.X=1350.874mil|Location1.Y=1301.855mil|Location2.Y=1313.105mil|Absolute=True">Silk To Silk Clearance Constraint: (0.209mm &lt; 0.254mm) Between Text "Q1" (11mm,8.81mm) on Bottom Overlay And Track (8.565mm,8.7mm)(8.565mm,19.3mm) on Bottom Overlay Silk Text to Silk Clearance [0.209mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1230.583mil|Location2.X=1241.833mil|Location1.Y=1787.229mil|Location2.Y=1798.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1230.583mil|Location2.X=1241.833mil|Location1.Y=1787.229mil|Location2.Y=1798.479mil|Absolute=True">Silk To Silk Clearance Constraint: (0.023mm &lt; 0.254mm) Between Text "R1" (5mm,21mm) on Bottom Overlay And Track (5.5mm,21.25mm)(6.5mm,21.25mm) on Bottom Overlay Silk Text to Silk Clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.033mil|Location2.X=1118.283mil|Location1.Y=1506.173mil|Location2.Y=1517.423mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.033mil|Location2.X=1118.283mil|Location1.Y=1506.173mil|Location2.Y=1517.423mil|Absolute=True">Silk To Silk Clearance Constraint: (0.023mm &lt; 0.254mm) Between Text "R2" (3mm,13mm) on Bottom Overlay And Track (2.75mm,13.5mm)(2.75mm,14.5mm) on Bottom Overlay Silk Text to Silk Clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1124.907mil|Location2.X=1132.573mil|Location1.Y=1468.608mil|Location2.Y=1476.274mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1124.907mil|Location2.X=1132.573mil|Location1.Y=1468.608mil|Location2.Y=1476.274mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.254mm) Between Text "R2" (3mm,13mm) on Bottom Overlay And Track (3.27mm,1.927mm)(3.27mm,27.073mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1269.978mil|Location2.X=1281.228mil|Location1.Y=1185.773mil|Location2.Y=1197.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1269.978mil|Location2.X=1281.228mil|Location1.Y=1185.773mil|Location2.Y=1197.023mil|Absolute=True">Silk To Silk Clearance Constraint: (0.023mm &lt; 0.254mm) Between Text "R3" (8mm,6mm) on Bottom Overlay And Track (6.5mm,5.75mm)(7.5mm,5.75mm) on Bottom Overlay Silk Text to Silk Clearance [0.023mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1118.332mil|Location2.X=1129.582mil|Location1.Y=1781.777mil|Location2.Y=1793.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1118.332mil|Location2.X=1129.582mil|Location1.Y=1781.777mil|Location2.Y=1793.027mil|Absolute=True">Silk To Silk Clearance Constraint: (0.043mm &lt; 0.254mm) Between Text "RS" (3mm,21mm) on Bottom Overlay And Track (3.27mm,1.927mm)(3.27mm,27.073mm) on Bottom Overlay Silk Text to Silk Clearance [0.043mm]</acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:11:36<br>just silk screen</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTTL3BV3BLUPYLFSHX0EPE5NXHXK1A4FMTQTSQ12M2WV0FC43GE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1658.824mil|Location2.X=1691.176mil|Location1.Y=2044.233mil|Location2.Y=2065.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1658.824mil|Location2.X=1691.176mil|Location1.Y=2044.233mil|Location2.Y=2065.168mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.421mm &lt; 0.5mm) Between Board Edge And Text "Kill_switch" (17mm,27mm) on Top Overlay </acronym></a><br>Waived by Ayush Gupta at 24-12-2019 16:09:59<br>just string on silk screen</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

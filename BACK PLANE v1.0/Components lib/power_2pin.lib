@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# power
+#
+DEF power B 0 40 Y Y 1 F N
+F0 "B" 40 50 16 V V C CNN
+F1 "power" -60 -10 16 V V C CNN
+F2 "" -3850 700 60 H I C CNN
+F3 "" -3850 700 60 H I C CNN
+DRAW
+S -40 30 60 -60 0 1 0 N
+X gnd 0 140 -40 79 L 20 20 1 1 I
+X vcc 1 140 10 79 L 20 20 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

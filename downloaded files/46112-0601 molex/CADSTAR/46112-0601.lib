@@ -1,0 +1,17 @@
+.46112-0601 :1 ;Heavy Duty Power Connectors LPH VERT.POWER ASSY SSY W INTERLOCK 6CKT
+"461120601"
+*STM J
+*NGS
+*PNM 1=A1 2=A2 3=A3 4=A4 5=B1 6=B2 7=B3 8=B4 9=C1 10=C2 11=C3 12=C4 13=D1 14=D2 15=D3 16=D4 17=E1 18=E2 19=E3 20=E4 21=F1 22=F2 23=F3 24=F4
+*PLB 1="A1" 2="A2" 3="A3" 4="A4" 5="B1" 6="B2" 7="B3" 8="B4" 9="C1" 10="C2" 11="C3" 12="C4" 13="D1" 14="D2" 15="D3" 16="D4" 17="E1" 18="E2" 19="E3" 20="E4" 21="F1" 22="F2" 23="F3" 24="F4"
+*MXP 24
+*DFN 46112-0601
+~!Mouser Part Number (538-46112-0601)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=538-46112-0601)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (46112-0601)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/46112-0601.pdf)
+~!Height (15.21mm)
+~!3D_Model (46112-0601)
+"46112-0601"
+1.1!U 3.1!U 5.1!U 7.1!U 9.1!U 11.1!U 13.1!U 15.1!U 17.1!U 19.1!U 21.1!U 23.1!U 2.1!U 4.1!U 6.1!U 8.1!U 10.1!U 12.1!U 14.1!U 16.1!U 18.1!U 20.1!U 22.1!U 24.1!U 

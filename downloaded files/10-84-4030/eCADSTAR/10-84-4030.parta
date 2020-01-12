@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_1182190"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-08-17-09:53:19)
+    (utime 2018-08-18-06:29:36)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "10-84-4030")
+)
+
+
+(pinAssign "ECS_1182190"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-08-17-09:53:19)
+    (utime 2018-08-18-06:29:36)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "3") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1182190")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "10-84-4030")
+)
+
+
+(part "10-84-4030"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-08-17-09:53:19)
+    (utime 2018-08-18-06:29:36)
+    (packageRef "10-84-4030")
+    (pinAssignRef "ECS_1182190")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "3") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "Pin & Socket Connectors HEADER VERT MALE 3P")
+    (property "uaManufacturer" "Molex")
+    (property "uaManufacturerPartNumber" "10-84-4030")
+    (property "uaVendor" "Mouser")
+    (property "uaVendorReference" "538-10-84-4030")
+    (property "uaAttribute1" "https://componentsearchengine.com/Datasheets/1/10-84-4030.pdf")
+    (property "compAreaTopHeight" 14.22)
+)
+
+

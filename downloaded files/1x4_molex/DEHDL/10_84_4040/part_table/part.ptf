@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '10_84_4040'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Molex", "10-84-4040" (!) = "", "SHDR4W166P0X635_1X4_2667X762X1422P", "Header, Shrouded", "538-10-84-4040", "https://www.mouser.com/Search/Refine.aspx?Keyword=538-10-84-4040", "Pin & Socket Connectors HEADER VERT MALE 4P", "https://componentsearchengine.com/Datasheets/1/10-84-4040.pdf", "14.22 mm"
+END_PART
+
+END.

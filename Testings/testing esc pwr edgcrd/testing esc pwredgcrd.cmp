@@ -1,0 +1,67 @@
+Cmp-Mod V01 Created by PcbNew   date = 03/14/19 04:56:05
+
+BeginCmp
+TimeStamp = 5C89880A
+Path = /5C8986C1
+Reference = R1;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C898810
+Path = /5C898950
+Reference = R2;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C898816
+Path = /5C89864E
+Reference = R3;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C89881C
+Path = /5C89894A
+Reference = R4;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C898822
+Path = /5C8986FE
+Reference = R5;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C898828
+Path = /5C898956
+Reference = R6;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C89882F
+Path = /5C8985BC
+Reference = U1;
+ValeurCmp = 3pin;
+IdModule  = pcb Footprints:esc_power_3pin;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C898836
+Path = /5C898B86
+Reference = U2;
+ValeurCmp = 3pin;
+IdModule  = pcb Footprints:esc_power_3pin;
+EndCmp
+
+EndListe

@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_794119"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-11-30-10:35:14)
+    (utime 2018-12-01-06:30:21)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "10-84-4020")
+)
+
+
+(pinAssign "ECS_794119"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-11-30-10:35:14)
+    (utime 2018-12-01-06:30:21)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_794119")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "10-84-4020")
+)
+
+
+(part "10-84-4020"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-11-30-10:35:14)
+    (utime 2018-12-01-06:30:21)
+    (packageRef "10-84-4020")
+    (pinAssignRef "ECS_794119")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "MOLEX - 10-84-4020 - CONNECTOR, HEADER, 2POS, 1ROW, 6.35MM")
+    (property "uaManufacturer" "Molex")
+    (property "uaManufacturerPartNumber" "10-84-4020")
+    (property "uaVendor" "Mouser")
+    (property "uaVendorReference" "538-10-84-4020")
+    (property "uaAttribute1" "https://componentsearchengine.com/Datasheets/1/10-84-4020.pdf")
+    (property "compAreaTopHeight" 13.97)
+)
+
+

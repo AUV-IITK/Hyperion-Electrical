@@ -1,0 +1,265 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:8_pin_conn
+LIBS:12_pin_conn
+LIBS:16_pin_conn
+LIBS:24_pin_conn
+LIBS:64_pin_conn
+LIBS:esc
+LIBS:lan_conn
+LIBS:power_2pin
+LIBS:usb_3.0 double_decker
+LIBS:6_pin_conn
+LIBS:6pin
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 6_pin_conn co1
+U 1 1 5C872BAF
+P 6100 3300
+F 0 "co1" V 6120 3410 16  0000 C CNN
+F 1 "6_pin_conn" V 6130 3320 16  0000 C CNN
+F 2 "New folder:edge card 0.65mm selfmade" H 2250 4000 60  0001 C CNN
+F 3 "" H 2250 4000 60  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5C872BE8
+P 5590 4100
+F 0 "R2" V 5670 4100 50  0000 C CNN
+F 1 "R" V 5590 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5520 4100 50  0001 C CNN
+F 3 "" H 5590 4100 50  0001 C CNN
+	1    5590 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5C872C2F
+P 6040 4070
+F 0 "R4" V 6120 4070 50  0000 C CNN
+F 1 "R" V 6040 4070 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5970 4070 50  0001 C CNN
+F 3 "" H 6040 4070 50  0001 C CNN
+	1    6040 4070
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5C872C56
+P 6450 4100
+F 0 "R6" V 6530 4100 50  0000 C CNN
+F 1 "R" V 6450 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6380 4100 50  0001 C CNN
+F 3 "" H 6450 4100 50  0001 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5C872F6E
+P 5410 2130
+F 0 "R1" V 5490 2130 50  0000 C CNN
+F 1 "R" V 5410 2130 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5340 2130 50  0001 C CNN
+F 3 "" H 5410 2130 50  0001 C CNN
+	1    5410 2130
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5C872F74
+P 5860 2100
+F 0 "R3" V 5940 2100 50  0000 C CNN
+F 1 "R" V 5860 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5790 2100 50  0001 C CNN
+F 3 "" H 5860 2100 50  0001 C CNN
+	1    5860 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5C872F7A
+P 6270 2130
+F 0 "R5" V 6350 2130 50  0000 C CNN
+F 1 "R" V 6270 2130 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6200 2130 50  0001 C CNN
+F 3 "" H 6270 2130 50  0001 C CNN
+	1    6270 2130
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6230 3240 6230 2770
+Wire Wire Line
+	6230 2770 5860 2770
+Wire Wire Line
+	5860 2770 5860 2250
+Wire Wire Line
+	6030 3240 5410 3240
+Wire Wire Line
+	5410 3240 5410 2280
+Wire Wire Line
+	6030 3270 5590 3270
+Wire Wire Line
+	5590 3270 5590 3950
+Wire Wire Line
+	6230 3270 6270 3270
+Wire Wire Line
+	6270 3270 6270 2280
+Wire Wire Line
+	6230 3330 6230 3920
+Wire Wire Line
+	6230 3920 6040 3920
+Wire Wire Line
+	6230 3300 6450 3300
+Wire Wire Line
+	6450 3300 6450 3950
+$Comp
+L 6_pin_conn co2
+U 1 1 5C873842
+P 8280 3320
+F 0 "co2" V 8300 3430 16  0000 C CNN
+F 1 "6_pin_conn" V 8310 3340 16  0000 C CNN
+F 2 "New folder:edge card 0.65mm selfmade" H 4430 4020 60  0001 C CNN
+F 3 "" H 4430 4020 60  0001 C CNN
+	1    8280 3320
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5C873848
+P 7770 4120
+F 0 "R8" V 7850 4120 50  0000 C CNN
+F 1 "R" V 7770 4120 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7700 4120 50  0001 C CNN
+F 3 "" H 7770 4120 50  0001 C CNN
+	1    7770 4120
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5C87384E
+P 8220 4090
+F 0 "R10" V 8300 4090 50  0000 C CNN
+F 1 "R" V 8220 4090 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8150 4090 50  0001 C CNN
+F 3 "" H 8220 4090 50  0001 C CNN
+	1    8220 4090
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5C873854
+P 8630 4120
+F 0 "R12" V 8710 4120 50  0000 C CNN
+F 1 "R" V 8630 4120 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8560 4120 50  0001 C CNN
+F 3 "" H 8630 4120 50  0001 C CNN
+	1    8630 4120
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5C87385A
+P 7590 2150
+F 0 "R7" V 7670 2150 50  0000 C CNN
+F 1 "R" V 7590 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7520 2150 50  0001 C CNN
+F 3 "" H 7590 2150 50  0001 C CNN
+	1    7590 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 5C873860
+P 8040 2120
+F 0 "R9" V 8120 2120 50  0000 C CNN
+F 1 "R" V 8040 2120 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7970 2120 50  0001 C CNN
+F 3 "" H 8040 2120 50  0001 C CNN
+	1    8040 2120
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5C873866
+P 8450 2150
+F 0 "R11" V 8530 2150 50  0000 C CNN
+F 1 "R" V 8450 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8380 2150 50  0001 C CNN
+F 3 "" H 8450 2150 50  0001 C CNN
+	1    8450 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8410 3260 8410 2790
+Wire Wire Line
+	8410 2790 8040 2790
+Wire Wire Line
+	8040 2790 8040 2270
+Wire Wire Line
+	8210 3260 7590 3260
+Wire Wire Line
+	7590 3260 7590 2300
+Wire Wire Line
+	8210 3290 7770 3290
+Wire Wire Line
+	7770 3290 7770 3970
+Wire Wire Line
+	8410 3290 8450 3290
+Wire Wire Line
+	8450 3290 8450 2300
+Wire Wire Line
+	8410 3350 8410 3940
+Wire Wire Line
+	8410 3940 8220 3940
+Wire Wire Line
+	8410 3320 8630 3320
+Wire Wire Line
+	8630 3320 8630 3970
+$EndSCHEMATC

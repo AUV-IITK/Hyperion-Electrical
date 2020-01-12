@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '53375_0210'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Molex", "53375-0210" (!) = "", "53375-0210", "Other", "538-53375-0210", "https://www.mouser.com/Search/Refine.aspx?Keyword=538-53375-0210", "2w S/R WTB header,2.5mm Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 2 Way 1 Row Shrouded Straight PCB Header, Through Hole", "https://componentsearchengine.com/Datasheets/1/53375-0210.pdf"
+END_PART
+
+END.

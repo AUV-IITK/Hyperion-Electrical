@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# esc
+#
+DEF esc e 0 40 Y Y 1 F N
+F0 "e" 90 -80 60 H V C CNN
+F1 "esc" 70 230 60 H V C CNN
+F2 "" 400 0 60 H I C CNN
+F3 "" 400 0 60 H I C CNN
+DRAW
+S -60 190 210 -30 0 1 0 N
+X b_out 1 290 150 79 L 16 16 1 1 I
+X g_out 2 290 90 79 L 16 16 1 1 I
+X w_out 3 290 20 79 L 16 16 1 1 I
+X speed 4 -140 160 79 R 16 16 1 1 I
+X ARd_gnd 5 -140 110 79 R 16 16 1 1 I
+X vin 6 -140 60 79 R 16 16 1 1 I
+X gnd 7 -140 10 79 R 16 16 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

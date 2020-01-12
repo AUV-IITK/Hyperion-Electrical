@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [kill_switch.PrjPcb]
+   Generated File[kill_switch-pcb.TXT]
+   Generated File[kill_switch-pcb.LDP]
+   Generated File[kill_switch-pcb.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 17:12:17 On 24-12-2019

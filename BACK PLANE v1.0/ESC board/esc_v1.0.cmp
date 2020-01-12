@@ -1,0 +1,243 @@
+Cmp-Mod V01 Created by PcbNew   date = 03/19/19 21:53:22
+
+BeginCmp
+TimeStamp = 5C911CE4
+Path = /5C82B634
+Reference = co3;
+ValeurCmp = 12_pin_conn;
+IdModule  = pcb Footprints:4_3connector;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911CF4
+Path = /5C82C907
+Reference = co4;
+ValeurCmp = 12_pin_conn;
+IdModule  = pcb Footprints:4_3connector;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911CFA
+Path = /5C8230F1
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D00
+Path = /5C824FCD
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D06
+Path = /5C8251CA
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D0C
+Path = /5C8251F2
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D12
+Path = /5C8253E0
+Reference = D5;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D18
+Path = /5C825408
+Reference = D6;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D1E
+Path = /5C825430
+Reference = D7;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D24
+Path = /5C825458
+Reference = D8;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D31
+Path = /5C821834
+Reference = e1;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D3E
+Path = /5C824FC1
+Reference = e2;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D4B
+Path = /5C8251BE
+Reference = e3;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D58
+Path = /5C8251E6
+Reference = e4;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D65
+Path = /5C8253D4
+Reference = e5;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D72
+Path = /5C8253FC
+Reference = e6;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D7F
+Path = /5C825424
+Reference = e7;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D8C
+Path = /5C82544C
+Reference = e8;
+ValeurCmp = esc;
+IdModule  = pcb Footprints:esc;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D93
+Path = /5C914207
+Reference = pwr1;
+ValeurCmp = 3pin;
+IdModule  = pcb Footprints:esc_power_3pin mirror;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911D9A
+Path = /5C91428F
+Reference = pwr2;
+ValeurCmp = 3pin;
+IdModule  = pcb Footprints:esc_power_3pin02;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DA0
+Path = /5C82305F
+Reference = R1;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DA6
+Path = /5C824FC7
+Reference = R2;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DAC
+Path = /5C8251C4
+Reference = R3;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DB2
+Path = /5C8251EC
+Reference = R4;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DB8
+Path = /5C8253DA
+Reference = R5;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DBE
+Path = /5C825402
+Reference = R6;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DC4
+Path = /5C82542A
+Reference = R7;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DCA
+Path = /5C825452
+Reference = R8;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DD4
+Path = /5C911282
+Reference = U1;
+ValeurCmp = 6pin;
+IdModule  = pcb Footprints:edge card 0.65mm selfmade;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C911DDE
+Path = /5C9111ED
+Reference = U2;
+ValeurCmp = 6pin;
+IdModule  = pcb Footprints:edge card 0.65mm selfmade;
+EndCmp
+
+EndListe

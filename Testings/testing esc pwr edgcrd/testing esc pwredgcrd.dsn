@@ -1,0 +1,200 @@
+(pcb "D:\PCB\testing esc pwr edgcrd\testing esc pwredgcrd.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.7")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  107480 -74680  107480 -43000  111470 -43000  111470 -42610
+            111990 -42610  111990 -30610  121590 -30610  121590 -42610  124090 -42610
+            124090 -30610  133690 -30610  133690 -42610  135990 -42610  135990 -30610
+            145590 -30610  145590 -42610  146110 -42610  146110 -43000  149010 -42990
+            149010 -74680  107480 -74680  107480 -74680)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Resistors_SMD:R_1206
+      (place R1 142370 -65080 back 90 (PN R))
+      (place R2 116210 -54920 front 90 (PN R))
+      (place R3 129410 -64570 back 90 (PN R))
+      (place R4 129540 -54410 front 90 (PN R))
+      (place R5 116590 -65460 back 90 (PN R))
+      (place R6 142110 -53900 front 90 (PN R))
+    )
+    (component "pcb Footprints:esc_power_3pin"
+      (place U1 111990 -42610 front 0 (PN 3pin))
+    )
+    (component "pcb Footprints:esc_power_3pin02"
+      (place U2 161160 -42610 back 0 (PN 3pin))
+    )
+  )
+  (library
+    (image Resistors_SMD:R_1206
+      (outline (path signal 100  -1600 -800  -1600 800))
+      (outline (path signal 100  1600 -800  -1600 -800))
+      (outline (path signal 100  1600 800  1600 -800))
+      (outline (path signal 100  -1600 800  1600 800))
+      (outline (path signal 120  1000 -1070  -1000 -1070))
+      (outline (path signal 120  -1000 1070  1000 1070))
+      (outline (path signal 50  -2150 1110  2150 1110))
+      (outline (path signal 50  -2150 1110  -2150 -1100))
+      (outline (path signal 50  2150 -1100  2150 1110))
+      (outline (path signal 50  2150 -1100  -2150 -1100))
+      (pin Rect[T]Pad_900x1700_um 1 -1450 0)
+      (pin Rect[T]Pad_900x1700_um 2 1450 0)
+    )
+    (image "pcb Footprints:esc_power_3pin"
+      (outline (path signal 10  34120 -390  -520 -390))
+      (outline (path signal 10  10100 0  12100 0))
+      (outline (path signal 10  24000 0  22200 0))
+      (outline (path signal 10  34120 0  34120 -390))
+      (outline (path signal 10  34120 0  33600 0))
+      (outline (path signal 10  -520 0  -520 -390))
+      (outline (path signal 10  0 0  -520 0))
+      (outline (path signal 10  24000 0  33600 0))
+      (outline (path signal 10  33600 0  33600 12000))
+      (outline (path signal 10  24000 0  24000 12000))
+      (outline (path signal 10  24000 12000  33600 12000))
+      (outline (path signal 10  12100 0  22200 0))
+      (outline (path signal 10  12100 0  12100 12000))
+      (outline (path signal 10  12100 12000  21700 12000))
+      (outline (path signal 10  21700 0  21700 12000))
+      (outline (path signal 10  9600 0  9600 12000))
+      (outline (path signal 10  9600 12000  0 12000))
+      (outline (path signal 10  0 12000  0 0))
+      (outline (path signal 10  0 0  10100 0))
+      (pin Rect[T]Pad_7500x11000_um 3 28800 5500)
+      (pin Rect[T]Pad_7500x11000_um 2 16900 5500)
+      (pin Rect[T]Pad_7500x11000_um 1 4800 5500)
+    )
+    (image "pcb Footprints:esc_power_3pin02"
+      (outline (path signal 10  15050 -390  49690 -390))
+      (outline (path signal 10  39070 0  37070 0))
+      (outline (path signal 10  25170 0  26970 0))
+      (outline (path signal 10  15050 0  15050 -390))
+      (outline (path signal 10  15050 0  15570 0))
+      (outline (path signal 10  49690 0  49690 -390))
+      (outline (path signal 10  49170 0  49690 0))
+      (outline (path signal 10  25170 0  15570 0))
+      (outline (path signal 10  15570 0  15570 12000))
+      (outline (path signal 10  25170 0  25170 12000))
+      (outline (path signal 10  25170 12000  15570 12000))
+      (outline (path signal 10  37070 0  26970 0))
+      (outline (path signal 10  37070 0  37070 12000))
+      (outline (path signal 10  37070 12000  27470 12000))
+      (outline (path signal 10  27470 0  27470 12000))
+      (outline (path signal 10  39570 0  39570 12000))
+      (outline (path signal 10  39570 12000  49170 12000))
+      (outline (path signal 10  49170 12000  49170 0))
+      (outline (path signal 10  49170 0  39070 0))
+      (pin Rect[T]Pad_7500x11000_um 3 20370 5500)
+      (pin Rect[T]Pad_7500x11000_um 2 32270 5500)
+      (pin Rect[T]Pad_7500x11000_um 1 44370 5500)
+    )
+    (padstack Rect[T]Pad_7500x11000_um
+      (shape (rect F.Cu -3750 -5500 3750 5500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_900x1700_um
+      (shape (rect F.Cu -450 -850 450 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(R1-Pad1)"
+      (pins R1-1 U2-3)
+    )
+    (net "Net-(R1-Pad2)"
+      (pins R1-2)
+    )
+    (net "Net-(R2-Pad1)"
+      (pins R2-1)
+    )
+    (net "Net-(R2-Pad2)"
+      (pins R2-2 U1-1)
+    )
+    (net "Net-(R3-Pad1)"
+      (pins R3-1 U2-2)
+    )
+    (net "Net-(R3-Pad2)"
+      (pins R3-2)
+    )
+    (net "Net-(R4-Pad1)"
+      (pins R4-1)
+    )
+    (net "Net-(R4-Pad2)"
+      (pins R4-2 U1-2)
+    )
+    (net "Net-(R5-Pad1)"
+      (pins R5-1 U2-1)
+    )
+    (net "Net-(R5-Pad2)"
+      (pins R5-2)
+    )
+    (net "Net-(R6-Pad1)"
+      (pins R6-1)
+    )
+    (net "Net-(R6-Pad2)"
+      (pins R6-2 U1-3)
+    )
+    (class kicad_default "" "Net-(R1-Pad1)" "Net-(R1-Pad2)" "Net-(R2-Pad1)"
+      "Net-(R2-Pad2)" "Net-(R3-Pad1)" "Net-(R3-Pad2)" "Net-(R4-Pad1)" "Net-(R4-Pad2)"
+      "Net-(R5-Pad1)" "Net-(R5-Pad2)" "Net-(R6-Pad1)" "Net-(R6-Pad2)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+    (wire (path B.Cu 250  142370 -63630  142370 -60310)(net "Net-(R1-Pad1)")(type protect))
+    (wire (path B.Cu 250  140790 -58730  140790 -37110)(net "Net-(R1-Pad1)")(type protect))
+    (wire (path B.Cu 250  142370 -60310  140790 -58730)(net "Net-(R1-Pad1)")(type protect))
+    (wire (path F.Cu 250  116210 -53470  116210 -49080)(net "Net-(R2-Pad2)")(type protect))
+    (wire (path F.Cu 250  116790 -48500  116790 -37110)(net "Net-(R2-Pad2)")(type protect))
+    (wire (path F.Cu 250  116210 -49080  116790 -48500)(net "Net-(R2-Pad2)")(type protect))
+    (wire (path B.Cu 250  129410 -63120  129410 -58740)(net "Net-(R3-Pad1)")(type protect))
+    (wire (path B.Cu 250  128890 -58220  128890 -37110)(net "Net-(R3-Pad1)")(type protect))
+    (wire (path B.Cu 250  129410 -58740  128890 -58220)(net "Net-(R3-Pad1)")(type protect))
+    (wire (path F.Cu 250  128890 -49570  128890 -37110)(net "Net-(R4-Pad2)")(type protect))
+    (wire (path F.Cu 250  129540 -50220  128890 -49570)(net "Net-(R4-Pad2)")(type protect))
+    (wire (path F.Cu 250  129540 -52960  129540 -50220)(net "Net-(R4-Pad2)")(type protect))
+    (wire (path B.Cu 250  116590 -64010  116590 -60610)(net "Net-(R5-Pad1)")(type protect))
+    (wire (path B.Cu 250  116790 -60410  116790 -37110)(net "Net-(R5-Pad1)")(type protect))
+    (wire (path B.Cu 250  116590 -60610  116790 -60410)(net "Net-(R5-Pad1)")(type protect))
+    (wire (path F.Cu 250  140790 -46070  140790 -37110)(net "Net-(R6-Pad2)")(type protect))
+    (wire (path F.Cu 250  142110 -47390  140790 -46070)(net "Net-(R6-Pad2)")(type protect))
+    (wire (path F.Cu 250  142110 -52450  142110 -47390)(net "Net-(R6-Pad2)")(type protect))
+  )
+)

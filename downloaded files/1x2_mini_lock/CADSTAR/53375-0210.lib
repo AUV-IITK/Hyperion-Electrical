@@ -1,0 +1,16 @@
+.53375-0210 :1 ;2w S/R WTB header,2.5mm Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 2 Way 1 Row Shrouded Straight PCB Header, Through Hole
+"53375-0210"
+*STM J
+*NGS
+*PLB 1="1" 2="2"
+*MXP 3
+*DFN 53375-0210
+~!Mouser Part Number (538-53375-0210)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=538-53375-0210)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (53375-0210)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/53375-0210.pdf)
+~!Height (-)
+~!3D_Model (53375-0210)
+"53375-0210"
+1.1!U 2.1!U 

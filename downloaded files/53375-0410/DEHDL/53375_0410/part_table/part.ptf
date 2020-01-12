@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '53375_0410'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Molex", "53375-0410" (!) = "", "53375-0410", "Other", "538-53375-0410", "https://www.mouser.com/Search/Refine.aspx?Keyword=538-53375-0410", "Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 4 Way 1 Row Straight PCB Header, Solder Termination, 3A", "https://componentsearchengine.com/Datasheets/1/53375-0410.pdf"
+END_PART
+
+END.

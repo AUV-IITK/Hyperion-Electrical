@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "conn footprint")(type KiCad)(uri "$(KIPRJMOD)/conn footprint.pretty")(options "")(descr ""))
+  (lib (name ALL_IN_ONE)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+)

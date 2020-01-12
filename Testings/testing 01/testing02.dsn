@@ -1,0 +1,228 @@
+(pcb D:\PCB\testing\testing02.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.7")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  184860 -91490  175640 -91490  175640 -107200  199940 -107200
+            199940 -91070  193200 -91070  193200 -91000  193100 -91000  193100 -86900
+            185000 -86900  185000 -91000  184900 -91000  184860 -91000  184860 -91490
+            184860 -91490)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 10)
+      (clearance 10.1)
+      (clearance 10.1 (type default_smd))
+      (clearance 2.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component "New folder:edge card 0.65mm selfmade"
+      (place co1 185000 -91000 front 0 (PN 6_pin_conn))
+      (place co2 193100 -91000 back 0 (PN 6_pin_conn))
+    )
+    (component Resistors_SMD:R_1206
+      (place R1 192350 -97100 front 90 (PN R))
+      (place R2 195150 -97000 front 270 (PN R))
+      (place R3 180750 -97300 front 90 (PN R))
+      (place R4 189650 -97300 front 270 (PN R))
+      (place R5 183550 -97200 front 90 (PN R))
+      (place R6 186550 -97250 front 270 (PN R))
+      (place R7 183700 -102050 back 270 (PN R))
+      (place R8 180650 -102100 back 90 (PN R))
+      (place R9 195050 -102100 back 270 (PN R))
+      (place R10 186600 -102100 back 90 (PN R))
+      (place R11 192300 -102100 back 270 (PN R))
+      (place R12 189650 -102150 back 90 (PN R))
+    )
+  )
+  (library
+    (image "New folder:edge card 0.65mm selfmade"
+      (outline (path signal 10  0 4100  8100 4100))
+      (outline (path signal 10  8100 0  8100 4100))
+      (outline (path signal 10  -100 0  8200 0))
+      (outline (path signal 10  8200 0  8200 -70))
+      (outline (path signal 10  8200 -70  -100 -70))
+      (outline (path signal 10  -100 -70  -100 0))
+      (outline (path signal 10  0 0  8100 0))
+      (outline (path signal 10  0 4100  0 0))
+      (pin Rect[T]Pad_630x3000_um 1 865 1600)
+      (pin Rect[T]Pad_630x3000_um 2 2145 1600)
+      (pin Rect[T]Pad_630x3000_um 3 3425 1600)
+      (pin Rect[T]Pad_630x3000_um 4 4705 1600)
+      (pin Rect[T]Pad_630x3000_um 5 5985 1600)
+      (pin Rect[T]Pad_630x3000_um 6 7265 1600)
+    )
+    (image Resistors_SMD:R_1206
+      (outline (path signal 100  -1600 -800  -1600 800))
+      (outline (path signal 100  1600 -800  -1600 -800))
+      (outline (path signal 100  1600 800  1600 -800))
+      (outline (path signal 100  -1600 800  1600 800))
+      (outline (path signal 120  1000 -1070  -1000 -1070))
+      (outline (path signal 120  -1000 1070  1000 1070))
+      (outline (path signal 50  -2150 1110  2150 1110))
+      (outline (path signal 50  -2150 1110  -2150 -1100))
+      (outline (path signal 50  2150 -1100  2150 1110))
+      (outline (path signal 50  2150 -1100  -2150 -1100))
+      (pin Rect[T]Pad_900x1700_um 1 -1450 0)
+      (pin Rect[T]Pad_900x1700_um 2 1450 0)
+    )
+    (padstack Rect[T]Pad_630x3000_um
+      (shape (rect F.Cu -315 -1500 315 1500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_900x1700_um
+      (shape (rect F.Cu -450 -850 450 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(R3-Pad2)"
+      (pins co1-1 R3-2)
+    )
+    (net "Net-(R5-Pad2)"
+      (pins co1-2 R5-2)
+    )
+    (net "Net-(R6-Pad1)"
+      (pins co1-3 R6-1)
+    )
+    (net "Net-(R4-Pad1)"
+      (pins co1-4 R4-1)
+    )
+    (net "Net-(R1-Pad2)"
+      (pins co1-5 R1-2)
+    )
+    (net "Net-(R2-Pad1)"
+      (pins co1-6 R2-1)
+    )
+    (net "Net-(R9-Pad2)"
+      (pins co2-1 R9-2)
+    )
+    (net "Net-(R11-Pad2)"
+      (pins co2-2 R11-2)
+    )
+    (net "Net-(R12-Pad1)"
+      (pins co2-3 R12-1)
+    )
+    (net "Net-(R10-Pad1)"
+      (pins co2-4 R10-1)
+    )
+    (net "Net-(R7-Pad2)"
+      (pins co2-5 R7-2)
+    )
+    (net "Net-(R8-Pad1)"
+      (pins co2-6 R8-1)
+    )
+    (net "Net-(R1-Pad1)"
+      (pins R1-1)
+    )
+    (net "Net-(R2-Pad2)"
+      (pins R2-2)
+    )
+    (net "Net-(R3-Pad1)"
+      (pins R3-1)
+    )
+    (net "Net-(R4-Pad2)"
+      (pins R4-2)
+    )
+    (net "Net-(R5-Pad1)"
+      (pins R5-1)
+    )
+    (net "Net-(R6-Pad2)"
+      (pins R6-2)
+    )
+    (net "Net-(R7-Pad1)"
+      (pins R7-1)
+    )
+    (net "Net-(R8-Pad2)"
+      (pins R8-2)
+    )
+    (net "Net-(R9-Pad1)"
+      (pins R9-1)
+    )
+    (net "Net-(R10-Pad2)"
+      (pins R10-2)
+    )
+    (net "Net-(R11-Pad1)"
+      (pins R11-1)
+    )
+    (net "Net-(R12-Pad2)"
+      (pins R12-2)
+    )
+    (class kicad_default "" "Net-(R1-Pad1)" "Net-(R1-Pad2)" "Net-(R10-Pad1)"
+      "Net-(R10-Pad2)" "Net-(R11-Pad1)" "Net-(R11-Pad2)" "Net-(R12-Pad1)"
+      "Net-(R12-Pad2)" "Net-(R2-Pad1)" "Net-(R2-Pad2)" "Net-(R3-Pad1)" "Net-(R3-Pad2)"
+      "Net-(R4-Pad1)" "Net-(R4-Pad2)" "Net-(R5-Pad1)" "Net-(R5-Pad2)" "Net-(R6-Pad1)"
+      "Net-(R6-Pad2)" "Net-(R7-Pad1)" "Net-(R7-Pad2)" "Net-(R8-Pad1)" "Net-(R8-Pad2)"
+      "Net-(R9-Pad1)" "Net-(R9-Pad2)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 10)
+        (clearance 10.1)
+      )
+    )
+  )
+  (wiring
+    (wire (path F.Cu 10  185865 -91685  185865 -89400)(net "Net-(R3-Pad2)")(type protect))
+    (wire (path F.Cu 10  185240 -92310  185865 -91685)(net "Net-(R3-Pad2)")(type protect))
+    (wire (path F.Cu 10  183040 -92310  185240 -92310)(net "Net-(R3-Pad2)")(type protect))
+    (wire (path F.Cu 10  180750 -94600  183040 -92310)(net "Net-(R3-Pad2)")(type protect))
+    (wire (path F.Cu 10  180750 -95850  180750 -94600)(net "Net-(R3-Pad2)")(type protect))
+    (wire (path F.Cu 10  187145 -91945  187145 -89400)(net "Net-(R5-Pad2)")(type protect))
+    (wire (path F.Cu 10  185800 -93290  187145 -91945)(net "Net-(R5-Pad2)")(type protect))
+    (wire (path F.Cu 10  184460 -93290  185800 -93290)(net "Net-(R5-Pad2)")(type protect))
+    (wire (path F.Cu 10  183550 -94200  184460 -93290)(net "Net-(R5-Pad2)")(type protect))
+    (wire (path F.Cu 10  183550 -95750  183550 -94200)(net "Net-(R5-Pad2)")(type protect))
+    (wire (path F.Cu 10  186550 -95800  186550 -94890)(net "Net-(R6-Pad1)")(type protect))
+    (wire (path F.Cu 10  188425 -93015  188425 -89400)(net "Net-(R6-Pad1)")(type protect))
+    (wire (path F.Cu 10  186550 -94890  188425 -93015)(net "Net-(R6-Pad1)")(type protect))
+    (wire (path F.Cu 10  189650 -95850  189650 -89455  189705 -89400)(net "Net-(R4-Pad1)")(type protect))
+    (wire (path F.Cu 10  192350 -95650  192350 -94170)(net "Net-(R1-Pad2)")(type protect))
+    (wire (path F.Cu 10  190985 -92805  190985 -89400)(net "Net-(R1-Pad2)")(type protect))
+    (wire (path F.Cu 10  192350 -94170  190985 -92805)(net "Net-(R1-Pad2)")(type protect))
+    (wire (path F.Cu 10  192265 -89400  192265 -91405)(net "Net-(R2-Pad1)")(type protect))
+    (wire (path F.Cu 10  195150 -94290  195150 -95550)(net "Net-(R2-Pad1)")(type protect))
+    (wire (path F.Cu 10  192265 -91405  195150 -94290)(net "Net-(R2-Pad1)")(type protect))
+    (wire (path B.Cu 10  195050 -100650  195050 -95020)(net "Net-(R9-Pad2)")(type protect))
+    (wire (path B.Cu 10  192235 -92205  192235 -89400)(net "Net-(R9-Pad2)")(type protect))
+    (wire (path B.Cu 10  195050 -95020  192235 -92205)(net "Net-(R9-Pad2)")(type protect))
+    (wire (path B.Cu 10  192300 -100650  192300 -94740)(net "Net-(R11-Pad2)")(type protect))
+    (wire (path B.Cu 10  190955 -93395  190955 -89400)(net "Net-(R11-Pad2)")(type protect))
+    (wire (path B.Cu 10  192300 -94740  190955 -93395)(net "Net-(R11-Pad2)")(type protect))
+    (wire (path B.Cu 10  189650 -100700  189650 -89425  189675 -89400)(net "Net-(R12-Pad1)")(type protect))
+    (wire (path B.Cu 10  186600 -100650  186600 -95620)(net "Net-(R10-Pad1)")(type protect))
+    (wire (path B.Cu 10  188395 -93825  188395 -89400)(net "Net-(R10-Pad1)")(type protect))
+    (wire (path B.Cu 10  186600 -95620  188395 -93825)(net "Net-(R10-Pad1)")(type protect))
+    (wire (path B.Cu 10  183700 -100600  183700 -96870)(net "Net-(R7-Pad2)")(type protect))
+    (wire (path B.Cu 10  187115 -93455  187115 -89400)(net "Net-(R7-Pad2)")(type protect))
+    (wire (path B.Cu 10  183700 -96870  187115 -93455)(net "Net-(R7-Pad2)")(type protect))
+    (wire (path B.Cu 10  180650 -100650  180650 -97720)(net "Net-(R8-Pad1)")(type protect))
+    (wire (path B.Cu 10  185835 -92535  185835 -89400)(net "Net-(R8-Pad1)")(type protect))
+    (wire (path B.Cu 10  180650 -97720  185835 -92535)(net "Net-(R8-Pad1)")(type protect))
+  )
+)

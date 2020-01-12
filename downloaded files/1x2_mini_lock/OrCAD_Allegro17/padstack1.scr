@@ -1,0 +1,50 @@
+#Padstack Editor Script
+QtSignal MainWindow Units CurrentIndexChanged Millimeter
+QtSignal MainWindow Units activated Millimeter
+QtSignal MainWindow DecimalPlaces CurrentIndexChanged 4
+QtSignal MainWindow DecimalPlaces activated 4
+
+QtSignal GuidedTabsParent PadstackTypes itemSelectionChanged "Thru Pin"
+QtSignal GuidedTabsParent PadstackTypes itemClicked "Thru Pin"
+
+QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+
+#Begin Layer
+QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Regular Pad"
+QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Regular Pad" 0 2
+QtSignal GuidedDesignLayersTab PadShape CurrentIndexChanged Circle
+QtSignal GuidedDesignLayersTab PadShape activated Circle
+QtSignal GuidedDesignLayersTab PadDiameter editingFinished 1.65
+
+#Default Internal
+QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Regular Pad"
+QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Regular Pad" None 1 2
+QtSignal GuidedDesignLayersTab PadShape CurrentIndexChanged Circle
+QtSignal GuidedDesignLayersTab PadShape activated Circle
+QtSignal GuidedDesignLayersTab PadDiameter editingFinished 1.65
+
+#End Layer
+QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Regular Pad"
+QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Regular Pad" None 2 2
+QtSignal GuidedDesignLayersTab PadShape CurrentIndexChanged Circle
+QtSignal GuidedDesignLayersTab PadShape activated Circle
+QtSignal GuidedDesignLayersTab PadDiameter editingFinished 1.65
+QtSignal GuidedTabsParent GuidedTabs currentChanged Drill
+QtSignal GuidedDrillTab holeXSize editingFinished 1.1
+QtSignal GuidedTabsParent GuidedTabs currentChanged "Drill Symbol"
+QtSignal GuidedDrillSymbol FigureType CurrentIndexChanged Diamond
+QtSignal GuidedDrillSymbol FigureType activated Diamond
+QtSignal GuidedDrillSymbol DrillCharacters editingFinished A
+QtSignal GuidedDrillSymbol FigureWidth editingFinished 1.1
+QtSignal GuidedDrillSymbol FigureHeight editingFinished 1.1
+
+QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+QtSignal OptionsTab SuppressPadsOption clicked true
+
+QtSignal MainWindow Check triggered
+QtSignal MainWindow SaveAs triggered
+QtFillin c165_h110
+QtFillin Yes
+
+QtSignal MainWindow Exit triggered
+#End of Pad Editor Script

@@ -1,0 +1,16 @@
+.85507-5001 :1 ;Modular Connectors / Ethernet Connectors MDJCK 8/8 VT SHLD CAT 5
+"855075001"
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="6" 7="7" 8="8" 9="9" 10="10"
+*MXP 12
+*DFN 85507-5001
+~!Mouser Part Number (538-85507-5001)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=538-85507-5001)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (85507-5001)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/85507-5001.pdf)
+~!Height (16.4mm)
+~!3D_Model (85507-5001)
+"85507-5001"
+1.1!U 3.1!U 5.1!U 7.1!U 9.1!U 2.1!U 4.1!U 6.1!U 8.1!U 10.1!U 

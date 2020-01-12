@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 10-84-4020
+#/794119/95763/2.37/2/3/Connector
+DEF 10-84-4020 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "10-84-4020" 650 200 50 H V L CNN
+F2 "SHDR2W186P635_1X2_1397X762X1397P" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/10-84-4020.pdf" 650 0 50 H I L CNN
+F4 "MOLEX - 10-84-4020 - CONNECTOR, HEADER, 2POS, 1ROW, 6.35MM" 650 -100 50 H I L CNN "Description"
+F5 "13.97" 650 -200 50 H I L CNN "Height"
+F6 "538-10-84-4020" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=538-10-84-4020" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Molex" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "10-84-4020" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 B
+X 2 2 0 -100 200 R 50 50 0 0 B
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

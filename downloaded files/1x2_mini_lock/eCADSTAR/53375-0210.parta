@@ -1,0 +1,65 @@
+(Japanese_coding: sjis)
+(function "ECS_352946"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-07-14-10:49:14)
+    (utime 2018-10-25-12:44:53)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "53375-0210")
+)
+
+
+(pinAssign "ECS_352946"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-07-14-10:49:14)
+    (utime 2018-10-25-12:44:53)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_352946")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "53375-0210")
+)
+
+
+(part "53375-0210"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-07-14-10:49:14)
+    (utime 2018-10-25-12:44:53)
+    (packageRef "53375-0210")
+    (pinAssignRef "ECS_352946")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "2w S/R WTB header,2.5mm Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 2 Way 1 Row Shrouded Straight PCB Header, Through Hole")
+    (property "Mouser_Part_Number" "538-53375-0210")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=538-53375-0210")
+    (property "Manufacturer_Name" "Molex")
+    (property "Manufacturer_Part_Number" "53375-0210")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/53375-0210.pdf")
+)
+
+

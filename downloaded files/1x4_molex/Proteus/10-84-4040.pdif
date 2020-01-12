@@ -1,0 +1,116 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "10-84-4040"
+   (description "Pin & Socket Connectors HEADER VERT MALE 4P")
+   (family "CON")
+   (package "SHDR4W166P0X635_1X4_2667X762X1422P")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/1/10-84-4040.pdf")
+   (attribute "Geometry.Height" "14.22mm")
+   (attribute "Mouser Part Number" "538-10-84-4040")
+   (attribute "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=538-10-84-4040")
+   (attribute "Manufacturer_Name" "Molex")
+   (attribute "Manufacturer_Part_Number" "10-84-4040")
+   (gate
+    (symbol "10-84-4040")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+   )
+  )
+  (symbol "10-84-4040"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SHDR4W166P0X635_1X4_2667X762X1422P"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -4.185 -4.185)
+      (pt -4.185 4.185)
+      (pt 23.235 4.185)
+      (pt 23.235 -4.185)
+      (pt -4.185 -4.185))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.935 -3.935)
+      (pt -3.935 3.935)
+      (pt 22.985 3.935)
+      (pt 22.985 -3.935)
+      (pt -3.935 -3.935))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 -3.935)
+      (pt 22.985 -3.935)
+      (pt 22.985 3.935)
+      (pt -3.935 3.935)
+      (pt -3.935 0))))
+   (leg 1 (pt 0 0) (padstack 1))
+   (leg 2 (pt 6.35 0) (padstack 0))
+   (leg 3 (pt 12.7 0) (padstack 0))
+   (leg 4 (pt 19.05 0) (padstack 0))
+   (padstack 0
+    (hole 1.85)
+    (plated true)
+    (pad (layer TCOP) (round 2.775))
+    (pad (layer INNER) (round 2.775))
+    (pad (layer BCOP) (round 2.775))
+   )
+   (padstack 1
+    (hole 1.85)
+    (plated true)
+    (pad (layer TCOP) (square 2.775))
+    (pad (layer INNER) (round 2.775))
+    (pad (layer BCOP) (square 2.775))
+   )
+   (model "10-84-4040.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

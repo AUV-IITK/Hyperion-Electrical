@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 6pin
+#
+DEF 6pin U 0 40 Y Y 1 F N
+F0 "U" -25 100 20 V V C CNN
+F1 "6pin" -25 -75 24 V V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 0 150 -50 -150 0 1 0 N
+X ~ 1 200 125 200 L 50 50 1 1 I
+X ~ 2 200 75 200 L 50 50 1 1 I
+X ~ 3 200 25 200 L 50 50 1 1 I
+X ~ 4 200 -25 200 L 50 50 1 1 I
+X ~ 5 200 -75 200 L 50 50 1 1 I
+X ~ 6 200 -125 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
