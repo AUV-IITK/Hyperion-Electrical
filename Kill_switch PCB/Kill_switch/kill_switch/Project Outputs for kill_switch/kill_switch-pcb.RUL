@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: D:\PCB\Altium\Kill_switch\kill_switch\kill_switch-pcb.PcbDoc
+RuleKind=Width|RuleName=25V-power_trace|Scope=Board|Minimum=39.37
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Default_Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
